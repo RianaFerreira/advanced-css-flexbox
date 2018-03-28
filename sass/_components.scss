@@ -2,23 +2,68 @@
 // LOGO
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 /********************************************************************/
 
 // SEARCH BOX
 .search {
-  &__input {
+  flex: 0 0 40%;    // display of the container flex item
 
+  display: flex;            // display of input and button
+  align-items: center;      // align elements along the x-axis
+  justify-content: center;  // align elements along the main axis
+
+  &__input {
+    background-color: var(--color-grey-light-2);
+    border: none;
+    border-radius: 100px;
+
+    color: inherit;        // does not inherit automatically
+    font-family: inherit;  // does not inherit automatically
+    font-size: inherit;    // does not inherit automatically
+
+    padding: .7rem 2rem;
+    transition: all .2s;
+    margin-right: -3.25rem; // search button will move ontop of input
+    width: 90%;
+
+    &:focus {
+      background-color: var(--color-grey-light-3);
+      outline: none;
+      width: 100%;
+    }
+
+    // change the placeholder text
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
+    }
+  }
+
+  // Use adjascent selector to select the sibling of the input
+  &__input:focus  + &__button {
+    background-color: var(--color-grey-light-3);
   }
 
   &__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
 
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
 
   &__icon {
     height: 2rem;
     width: 2rem;
+    fill: var(--color-grey-dark-3);
   }
 }
 
@@ -27,7 +72,6 @@
 // USER NAVIGATION
 .user-nav {
   &__icon-box {
-
   }
 
   &__icon {
