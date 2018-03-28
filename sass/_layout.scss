@@ -1,3 +1,4 @@
+/******************************* MAIN CONTAINER *******************************/
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -7,10 +8,11 @@
   min-height: 50rem;
 }
 
+/***************************** HEADER NAVIGATION ******************************/
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: var(--line);
   font-size: 1.4rem;
 
   display: flex;
@@ -18,10 +20,12 @@
   align-items: center;
 }
 
+/**************** SIDE NAVIGATION AND HOTEL INFO ******************************/
 .content {
   display: flex;
 }
 
+/**************************** NAVIGATION SIDEBAR ******************************/
 .sidebar {
   background-color: var(--color-grey-dark-1);
 
@@ -32,9 +36,34 @@
   justify-content: space-between;
 }
 
+/****************************** HOTEL INFORMATION *****************************/
 .hotel-view {
   background-color: #fff;
-  height: 80rem;
+  // height: 80rem;  // temporary height to test display
 
   flex: 1;  // allow element to grow as much as it can
+}
+
+/******************************* HOTEL DETAIL *********************************/
+.detail {
+  display: flex;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+  padding: 4.5rem;
+}
+
+/******************************* HOTEL DESCRIPTION ****************************/
+.description {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  flex: 0 0 60%;
+  font-size: 1.4rem;
+  margin-right: 4.5rem;
+  padding: 3rem;
+}
+
+/********************************* HOTEL REVIEWS ******************************/
+.user-reviews {
+  background-color: yellow;
+  flex: 1;      // occupy remaining container space
 }

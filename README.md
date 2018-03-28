@@ -34,16 +34,18 @@ $ npm run start
 * Use SVG sprites in HTML.
 * Change colour of SVG icon in CSS.
 * Advanced flexbox alignment techniques:
-  -> justify-content
-  -> align-items
-  -> align-self
-  -> flex
+  -> `justify-content`
+  -> `align-items`
+  -> `align-self`
+  -> `flex`
 
 ### SIDE NAVIGATION EFFECTS
-* Hover effect - scaleY with multiple transition properties
-* currentColor CSS variable
-* Advanced flexbox alignment technique - flex-direction
+* Hover effect - `scaleY` with multiple transition properties
+* `currentColor` CSS variable
+* Advanced flexbox alignment technique - `flex-direction`
 
 ### MAIN CONTENT EFFECTS
-* infinite animation
+* `infinite` animation property
 * `margin: auto` with flexbox
+* Advanced flexbox alignment technique - `flex-wrap`
+* CSS masks - `mask-size` and `mask-image`

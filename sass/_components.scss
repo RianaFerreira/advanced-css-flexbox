@@ -230,7 +230,7 @@
   display: flex;
   align-items: center;
 
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: var(--line);
 
   &__heading {
     font-size: 2.2.5rem;
@@ -326,5 +326,86 @@
   100% {
     transform: scale(1);
     box-shadow: none;
+  }
+}
+
+/********************************************************************/
+
+// MAIN CONTENT RECOMMENDATION PARAGRAPH
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+/********************************************************************/
+
+// MAIN CONTENT RECOMMENDATION LIST
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem;
+  border-top: var(--line);
+  border-bottom: var(--line);
+
+  display: flex;        // Display list items in two columns
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem;
+  }
+
+  // prepend an icon before each list item
+  &__item::before {
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: .7rem;
+
+    // Display the > SVG with a background of the primary colour
+    // OLDER BROWSERS
+    // background-image: url(../img/chevron-thin-right.svg);
+    // backgroun-size: cover;
+
+    // NEWER BROWSERS
+    background-color: var(--color-primary);
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+}
+
+/********************************************************************/
+
+// MAIN CONTENT RECOMMENDATION IMAGES
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+
+  display: flex;
+  align-items: center;
+
+  &__count {
+    // Trick with flex to make an element use all the available space.
+    // Pushes the images all the way to the right of the container.
+    margin-right: auto;
+  }
+
+  &__friends {
+
+  }
+
+  &__photo {
+    box-sizing: content-box;  // Don't include the border size in the image size
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+
+    // overlap each of the images
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
   }
 }
