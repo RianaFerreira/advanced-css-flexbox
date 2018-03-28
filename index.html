@@ -14,7 +14,57 @@
       <div class="container">
 
         <header class="header">
-          Header
+          <!-- APP LOGO -->
+          <img src="img/logo.png" alt="trillo logo" class="logo">
+
+          <!-- SEARCH FORM -->
+          <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="Search hotels">
+
+            <button class="search__button">
+              <!-- INCLUDE SVG INSTEAD OF FONT ICON -->
+              <svg class="search__icon">
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+            </button>
+
+          </form>
+
+          <!-- USER NAVIGATION -->
+          <nav class="user-nav">
+
+            <!-- BOOKMARKS -->
+            <div class="user-nav__icon-box">
+              <!-- IMAGE -->
+              <svg class="user-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+              </svg>
+
+              <!-- NOTIFICATION INDICATOR -->
+              <span class="user-nav__notification">10</span>
+            </div>
+
+            <!-- CHAT -->
+            <div class="user-nav__icon-box">
+              <!-- IMAGE -->
+              <svg class="user-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-chat"></use>
+              </svg>
+
+              <!-- NOTIFICATION INDICATOR -->
+              <span class="user-nav__notification">7</span>
+            </div>
+
+            <!-- AVATAR -->
+            <div class="user-nav__user">
+              <!-- IMAGE -->
+              <img src="img/user.jpg" alt="User avatar" class="user-nav__user-photo">
+
+              <!-- NAME -->
+              <span class="user-nav__user-name">Riana</span>
+            </div>
+
+          </nav>
         </header>
 
         <!-- FLEXBOX CONTAINER -->

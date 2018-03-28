@@ -26,3 +26,15 @@ $ npm run start
   -> Can be manipulated in JS and DevTools.
   -> Easier to use in the calc function.
   -> Cascade and are inherited.
+* Layout with flex properties.
+
+### IMAGES
+* Scalable Vector Graphics (SVG) icons vs font icons.
+* Find and generate SVGs icomoon.io
+* Use SVG sprites in HTML.
+* Change colour of SVG icon in CSS.
+* Advanced flexbox alignment techniques:
+  -> justify-content
+  -> align-items
+  -> align-self
+  -> flex
