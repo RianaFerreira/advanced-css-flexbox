@@ -43,3 +43,7 @@ $ npm run start
 * Hover effect - scaleY with multiple transition properties
 * currentColor CSS variable
 * Advanced flexbox alignment technique - flex-direction
+
+### MAIN CONTENT EFFECTS
+* infinite animation
+* `margin: auto` with flexbox

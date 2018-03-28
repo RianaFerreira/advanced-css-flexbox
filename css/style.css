@@ -173,12 +173,31 @@ body {
     margin-right: 2rem;
     fill: currentColor; }
 
+/********************************************************************/
 .legal {
   color: var(--color-grey-light-4);
   font-size: 1.2rem;
   text-align: center;
   padding: 2.5rem; }
 
+/********************************************************************/
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    display: block;
+    width: 100%; }
+
+/********************************************************************/
+.overview {
+  display: flex; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon-star, .overview__icon-location {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--color-primary); }
+
+/********************************************************************/
 .container {
   max-width: 120rem;
   margin: 8rem auto;

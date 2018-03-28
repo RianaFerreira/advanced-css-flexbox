@@ -199,9 +199,62 @@
   }
 }
 
+/********************************************************************/
+
+// SIDE NAVIGATION DISCLAIMER
 .legal {
   color: var(--color-grey-light-4);
   font-size: 1.2rem;
   text-align: center;
   padding: 2.5rem;
 }
+
+/********************************************************************/
+
+// MAIN CONTENT IMAGE GALLERY
+.gallery {
+  display: flex;
+
+  &__item {}
+
+  &__photo {
+    display: block;  // avoid space below image in container
+    width: 100%;
+  }
+}
+
+/********************************************************************/
+
+// MAIN CONTENT OVERVIEW
+.overview {
+  display: flex;
+
+  &__heading {}
+
+  &__stars {
+    // flex: 1;
+    margin-right: auto;  // Create space to the right of the element
+  }
+
+  &__icon-star,
+  &__icon-location {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+
+  }
+
+  &__rating {}
+
+  &__rating-average {}
+
+  &__rating-count {}
+}
+
+
+/********************************************************************/
+
+// MAIN CONTENT DETAIL
