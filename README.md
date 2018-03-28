@@ -38,3 +38,8 @@ $ npm run start
   -> align-items
   -> align-self
   -> flex
+
+### SIDE NAVIGATION EFFECTS
+* Hover effect - scaleY with multiple transition properties
+* currentColor CSS variable
+* Advanced flexbox alignment technique - flex-direction
