@@ -6,6 +6,13 @@
   box-shadow: var(--shadow-dark);
 
   min-height: 50rem;
+
+  // Desktop first media queries use max-width
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 /***************************** HEADER NAVIGATION ******************************/
@@ -18,11 +25,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: $bp-xsmall) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 11rem;
+  }
 }
 
 /**************** SIDE NAVIGATION AND HOTEL INFO ******************************/
 .content {
   display: flex;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
 }
 
 /**************************** NAVIGATION SIDEBAR ******************************/
@@ -51,6 +68,15 @@
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
   padding: 4.5rem;
+
+  // Larger screen media query should be first so that conflicts cascade
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
 }
 
 /******************************* HOTEL DESCRIPTION ****************************/
@@ -61,6 +87,16 @@
   font-size: 1.4rem;
   margin-right: 4.5rem;
   padding: 3rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-right: 3rem;
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 /********************************* HOTEL REVIEWS ******************************/

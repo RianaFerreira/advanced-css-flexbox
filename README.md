@@ -49,3 +49,7 @@ $ npm run start
 * `margin: auto` with flexbox
 * Advanced flexbox alignment technique - `flex-wrap`
 * CSS masks - `mask-size` and `mask-image`
+
+### RESPONSIVE MEDIA QUERIES
+* Browser support for flex https://caniuse.com/#search=flex
+* Feature @support query for mask in new browsers and fallback for older browsers
