@@ -489,4 +489,69 @@
 
 /********************************************************************/
 
-// MAIN CONTENT AVAILABILITY
+// MAIN CONTENT CALL TO ACTION
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  &__message {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+  }
+}
+
+
+/********************************************************************/
+
+// MAIN CONTENT CALL TO ACTION BUTTON
+.btn {
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 300;
+  overflow: hidden;
+  text-transform: uppercase;
+
+  position: relative;        // Relative to the invisible span element
+
+  & > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+  }
+
+  &__invisible {
+    padding: 2rem 0;
+
+    position: absolute;
+    top: -100%;          // move up exactly the size of the element
+    left: 0;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+
+  &:hover {
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+  }
+
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover  &__invisible {
+    top: 0;
+  }
+}
