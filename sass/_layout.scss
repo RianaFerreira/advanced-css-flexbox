@@ -46,6 +46,7 @@
 
 /******************************* HOTEL DETAIL *********************************/
 .detail {
+  font-size: 1.4rem;
   display: flex;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
@@ -64,6 +65,9 @@
 
 /********************************* HOTEL REVIEWS ******************************/
 .user-reviews {
-  background-color: yellow;
   flex: 1;      // occupy remaining container space
+
+  display: flex;            // Display review elements
+  flex-direction: column;
+  align-items: center;
 }

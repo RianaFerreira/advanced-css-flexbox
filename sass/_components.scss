@@ -302,8 +302,17 @@
   padding-bottom: 2px;
   transition: all .2s;
 
+  & span {
+    margin-left: 3px;
+    transition: margin-left .2s;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1);
+
+    span {
+      margin-left: 8px;
+    }
   }
 
   &:focus {
@@ -409,3 +418,75 @@
     }
   }
 }
+
+/********************************************************************/
+
+// MAIN CONTENT REVIEWS
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  margin-bottom: 3.5rem;
+  overflow: hidden;      // Hide the quotation mark that extends beyond the container
+  padding: 3rem;
+
+  position: relative;    // Relative to the quotation marks
+
+  &::before {
+    content: "\201C";    // Display html entity representing quotation marks
+
+    position: absolute;
+    top: -2.75rem;
+    left: -1rem;
+    z-index: 1;
+
+    color: var(--color-grey-light-2);
+    font-family: sans-serif;
+    font-size: 20rem;
+    line-height: 1;
+  }
+
+  &__insights {
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__user {
+    display: flex;     // Display reviewer avatar, user box and rating
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+  }
+
+  &__user-box {
+    margin-right: auto;     // Make the element take up all the available space
+  }
+
+  &__user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .4rem;
+  }
+
+  &__user-dob {
+    font-size: 1rem;
+    color: var(--color-grey-dark-3);
+  }
+
+  &__rating {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+}
+
+/********************************************************************/
+
+// MAIN CONTENT AVAILABILITY
