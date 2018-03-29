@@ -53,3 +53,11 @@ $ npm run start
 ### RESPONSIVE MEDIA QUERIES
 * Browser support for flex https://caniuse.com/#search=flex
 * Feature @support query for mask in new browsers and fallback for older browsers
+* Test revised development build process
+
+### TODO list
+1. Display a user menu when hovering over the username in .user-nav.
+2. Display a message menu when hovering over the chat icon in .user-nav i.e. facebook.
+3. Display a box with search suggestions when the user start typing in the search field.
+4. Create a caption for the .gallery__item with a nice hover effect.
+5. Make the page 100% responsive for viewports below 500px, include responsive images.
